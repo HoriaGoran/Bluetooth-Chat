@@ -106,9 +106,8 @@ public class ServerThread extends Thread
                     serverReadThread.start();
 
                     try
-                    {//wait here until the clientReadThread is ready
+                    {//wait here until the serverReadThread is ready
                         semaphore.acquire();
-//                        Thread.sleep(1000);========================================================================================================================================================
                     }
                     catch(Exception e)
                     {
