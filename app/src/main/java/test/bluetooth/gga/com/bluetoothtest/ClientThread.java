@@ -145,12 +145,6 @@ public class ClientThread extends Thread
             return;
         }
 
-//        doLog("ClientThread run 2");
-//
-//        // Do work to manage the connection (in a separate thread)
-//        clientReadThread = new ClientReadThread(mSocket);
-//        clientReadThread.start();
-
         doLog("ClientThread EXIT");
     }
 
@@ -315,7 +309,7 @@ public class ClientThread extends Thread
                         {
                             client_name = str;
 
-                                    doLog("ClientReadThread we have its name : " + client_name);
+                            doLog("ClientReadThread we have its name : " + client_name);
                         }
                         else
                         {
