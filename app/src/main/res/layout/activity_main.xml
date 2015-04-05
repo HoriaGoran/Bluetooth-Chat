@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:text="Find Server"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_find"
+        android:layout_above="@+id/layout_chat_functionality"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:editable="false"
+            android:enabled="true"
+            android:inputType="none"
+            android:focusable="false"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+        <ListView
+            android:id="@+id/listview_device"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ListView
+            android:id="@+id/listview_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:divider="@null"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_chat_functionality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/edit_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_insert"
+            android:inputType="text"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Send"/>
+    </RelativeLayout>
+
+</RelativeLayout>

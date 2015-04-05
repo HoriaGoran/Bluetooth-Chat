@@ -1,0 +1,2 @@
+- in ServerThread.java, client_counter does not decrement when a client disconnects
+- the UUID it is possible to not work with all phones, resulting in a client not be able to connect to the server
